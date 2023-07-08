@@ -1,0 +1,9 @@
+DB_URL=postgresql://db:db_user:db_password@host:5432/diabetic
+
+DB_PASSWORD=db_password
+DB_USERNAME=db_user
+DB_NAME=diabetic
+
+
+PG_ADMIN_EMAIL=
+PG_ADMIN_PASSWORD=
