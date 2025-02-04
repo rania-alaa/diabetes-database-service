@@ -40,7 +40,7 @@ services:
     volumes:
       - postgresql_volume:/var/lib/postgresql/data
       - ./database_setup/postgresql_setup/postgresql.conf:/etc/postgresql/postgresql.conf  # Mount config
-      - ./postgresql_setup:/docker-entrypoint-initdb.d  # Mount SQL scripts here
+      - ./database_setup/postgresql_setup:/docker-entrypoint-initdb.d  # Mount SQL scripts here
 
     command:  ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]  # Use the custom config file
     environment:
